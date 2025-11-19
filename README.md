@@ -20,3 +20,11 @@ The script then exits the repl, moves up to the homedir and down into the testin
 - Download `main.py`
 - If not already installed, run `pip install keyboard`
 - Run `main.py`
+
+## Video demo
+(sorry for low quality, this was recorded from my phone at night)
+
+
+https://github.com/user-attachments/assets/b4159b29-a2e6-4582-bc18-0c313746a155
+
+
